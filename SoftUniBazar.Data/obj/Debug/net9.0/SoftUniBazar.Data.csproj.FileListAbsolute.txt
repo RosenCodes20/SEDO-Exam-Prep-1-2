@@ -1,0 +1,15 @@
+/Users/macbookpro16/Vs_code/exam_prep_seado/SEDO-Exam-Prep-1-2/SoftUniBazar.Data/bin/Debug/net9.0/SoftUniBazar.Data.deps.json
+/Users/macbookpro16/Vs_code/exam_prep_seado/SEDO-Exam-Prep-1-2/SoftUniBazar.Data/bin/Debug/net9.0/SoftUniBazar.Data.runtimeconfig.json
+/Users/macbookpro16/Vs_code/exam_prep_seado/SEDO-Exam-Prep-1-2/SoftUniBazar.Data/bin/Debug/net9.0/SoftUniBazar.Data.dll
+/Users/macbookpro16/Vs_code/exam_prep_seado/SEDO-Exam-Prep-1-2/SoftUniBazar.Data/bin/Debug/net9.0/SoftUniBazar.Data.pdb
+/Users/macbookpro16/Vs_code/exam_prep_seado/SEDO-Exam-Prep-1-2/SoftUniBazar.Data/obj/Debug/net9.0/SoftUniBazar.Data.csproj.AssemblyReference.cache
+/Users/macbookpro16/Vs_code/exam_prep_seado/SEDO-Exam-Prep-1-2/SoftUniBazar.Data/obj/Debug/net9.0/SoftUniBazar.Data.GeneratedMSBuildEditorConfig.editorconfig
+/Users/macbookpro16/Vs_code/exam_prep_seado/SEDO-Exam-Prep-1-2/SoftUniBazar.Data/obj/Debug/net9.0/SoftUniBazar.Data.AssemblyInfoInputs.cache
+/Users/macbookpro16/Vs_code/exam_prep_seado/SEDO-Exam-Prep-1-2/SoftUniBazar.Data/obj/Debug/net9.0/SoftUniBazar.Data.AssemblyInfo.cs
+/Users/macbookpro16/Vs_code/exam_prep_seado/SEDO-Exam-Prep-1-2/SoftUniBazar.Data/obj/Debug/net9.0/SoftUniBazar.Data.csproj.CoreCompileInputs.cache
+/Users/macbookpro16/Vs_code/exam_prep_seado/SEDO-Exam-Prep-1-2/SoftUniBazar.Data/obj/Debug/net9.0/SoftUniBazar.Data.sourcelink.json
+/Users/macbookpro16/Vs_code/exam_prep_seado/SEDO-Exam-Prep-1-2/SoftUniBazar.Data/obj/Debug/net9.0/SoftUniBazar.Data.dll
+/Users/macbookpro16/Vs_code/exam_prep_seado/SEDO-Exam-Prep-1-2/SoftUniBazar.Data/obj/Debug/net9.0/refint/SoftUniBazar.Data.dll
+/Users/macbookpro16/Vs_code/exam_prep_seado/SEDO-Exam-Prep-1-2/SoftUniBazar.Data/obj/Debug/net9.0/SoftUniBazar.Data.pdb
+/Users/macbookpro16/Vs_code/exam_prep_seado/SEDO-Exam-Prep-1-2/SoftUniBazar.Data/obj/Debug/net9.0/SoftUniBazar.Data.genruntimeconfig.cache
+/Users/macbookpro16/Vs_code/exam_prep_seado/SEDO-Exam-Prep-1-2/SoftUniBazar.Data/obj/Debug/net9.0/ref/SoftUniBazar.Data.dll
