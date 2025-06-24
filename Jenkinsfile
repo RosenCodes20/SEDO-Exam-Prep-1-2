@@ -1,36 +1,40 @@
 pipeline {
     agent any
 
-    environment {
-        DOTNET_ROOT = '/usr/local/share/dotnet'
-        PATH = "${DOTNET_ROOT}:${PATH}"
-    }
-
     stages {
-        stage('Restore') {
+        stage('Prepare') {
+            when {
+                expression {
+                    def allowed = ['main', 'hotfix/urgent-bug', 'feature/multiply-button', 'bugfix/subtract-empty']
+                    return allowed.contains(env.BRANCH_NAME)
+                }
+            }
             steps {
-                echo 'Restoring dependencies...'
-                sh 'dotnet restore'
+                checkout scm
+                echo "Building and testing branch: ${env.BRANCH_NAME}"
             }
         }
 
         stage('Build') {
-            steps {
-                echo 'Building the solution...'
-                sh 'dotnet build --no-restore'
+            when {
+                expression {
+                    def allowed = ['main', 'hotfix/urgent-bug', 'feature/multiply-button', 'bugfix/subtract-empty']
+                    return allowed.contains(env.BRANCH_NAME)
+                }
             }
-        }
-
-        stage('Rebuild') {
             steps {
-                echo 'Rebuilding the solution...'
-                sh 'dotnet build --no-restore --no-incremental'
+                sh 'dotnet build --configuration Release'
             }
         }
 
         stage('Test') {
+            when {
+                expression {
+                    def allowed = ['main', 'hotfix/urgent-bug', 'feature/multiply-button', 'bugfix/subtract-empty']
+                    return allowed.contains(env.BRANCH_NAME)
+                }
+            }
             steps {
-                echo 'Running tests...'
                 sh 'dotnet test --no-build --verbosity normal'
             }
         }
@@ -38,13 +42,14 @@ pipeline {
 
     post {
         always {
-            echo 'Pipeline completed.'
+            echo "Finished pipeline for branch: ${env.BRANCH_NAME}"
+            cleanWs()
         }
         success {
             echo 'Build and tests succeeded!'
         }
         failure {
-            echo 'Pipeline failed. Please check the logs.'
+            echo 'Build or tests failed!'
         }
     }
 }
